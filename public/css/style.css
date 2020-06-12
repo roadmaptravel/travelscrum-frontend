@@ -3,3 +3,31 @@ body {
 	margin: 0 auto !important; 
 	float: none !important; 
 }
+
+* {
+	font-family: HelveticaNeue;
+}
+
+.infoblock h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.infoblock h4 {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #333333;
+  font-weight: normal;
+}
+	
+.infoblock h5 {
+	font-size: 16px;
+	line-height: 1.25;
+	color: #919191;
+	font-weight: normal;
+}
