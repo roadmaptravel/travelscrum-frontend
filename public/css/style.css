@@ -1,7 +1,12 @@
 body { 
 	max-width: 480px; 
+	background: #c9c9c9;
 	margin: 0 auto !important; 
 	float: none !important; 
+}
+
+.roadmap-container { 
+	background: #fff;
 }
 
 * {
@@ -32,12 +37,8 @@ body {
 	font-weight: normal;
 }
 
-.menu { overflow-y: hidden; overflow-x: scroll;}
-
 .menu .nav {
 	background: #eab425;
-	overflow-x: scroll;
-	width: 800px;
 	height: 42px;
 }
 
@@ -59,3 +60,7 @@ body {
 }
 
 .menu .nav-link { padding: 0 33px;}
+
+.padding-box {
+	padding: 0 25px;
+}
