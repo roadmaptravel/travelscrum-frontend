@@ -31,3 +31,20 @@ body {
 	color: #919191;
 	font-weight: normal;
 }
+
+.menu .nav {
+	background: #eab425;
+	height: 42px;
+}
+
+.menu .nav a {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 42px;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.menu .nav-link { padding: 0 33px;}

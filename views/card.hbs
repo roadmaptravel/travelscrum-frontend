@@ -11,12 +11,64 @@
 		<h5>Mon, 15 Jun - Thu, 18 Jun 2020</h5>
 	</div>
 	
-	<div class="menu">
-		<ul>
-			<li>Checklist</li>
-			<li>Country</li>
-			<li>City</li>
-			<li>Travel Tips</li>
+	<div class="col-md-12 menu">
+		
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="checklist-tab" data-toggle="tab" href="#checklist" role="tab" aria-controls="checklist" aria-selected="false">Checklist</a>
+			</li>
+			
+			<li class="nav-item" role="presentation">
+				<a class="nav-link active" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="true">Country</a>
+			</li>
+			
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="city-tab" data-toggle="tab" href="#city" role="tab" aria-controls="city" aria-selected="false">City</a>
+			</li>
+			
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="traveltips-tab" data-toggle="tab" href="#traveltips" role="tab" aria-controls="traveltips" aria-selected="false">Travel Tips</a>
+			</li>
 		</ul>
+	</div>
+	
+	<div class="col-md-12 tab-content" id="myTabContent">
+		<div class="tab-pane fade" id="checklist" role="tabpanel" aria-labelledby="checklist-tab">...</div>
+		<div class="tab-pane fade show active" id="country" role="tabpanel" aria-labelledby="counntry-tab">
+			<div class="row destination">
+				<div class="col-md-12">
+					<h5>Arrive at destination</h5>
+					
+					<p><strong>Entry restrictions</strong><br />
+					Most international travelers are not allowed to enter the Netherlands.</p>
+					
+					<p><strong>Recommended 14-day quarantine</strong><br />
+						All travelers arriving from high-risk areas found on the European Union Aviation Safety Agencies list are strongly advised to quarantine for 14 days upon arrival. 
+					</p>
+					
+					<p><strong>Mandatory health declaration form before departure</strong><br />
+						Travelers are required to fill out a health declaration before boarding if they are arriving from a country on the European Union Aviation Safety Agencies high-risk areas list.</p>
+				</div>
+				
+				<div class="col-md-12">
+					<h5>Arrive at destination</h5>
+					
+					<p><strong>Entry restrictions</strong><br />
+						Travelers can’t enter the United States if they have visited selected countries in the past 14 days.</p>
+					
+					<p><strong>Mandatory 14-day quarantine</strong><br />
+						All travelers that have been to a selected country within 14 days of their arrival are required to self-quarantine for 14 days at home.  
+
+
+					</p>
+					
+					<p><strong>Mandatory health declaration form</strong><br />
+						Individual states may have their own restrictions and procedures in place. Check with local authorities for travel information before entering each US state. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="city" role="tabpanel" aria-labelledby="city-tab">...</div>
+		<div class="tab-pane fade" id="traveltips" role="tabpanel" aria-labelledby="traveltips-tab">...</div>
 	</div>
 </div>
