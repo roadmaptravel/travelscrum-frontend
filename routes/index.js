@@ -16,6 +16,10 @@ router.get('/entry', (req, res) => {
 	res.render('entry', req.params);
 });
 
+router.get('/klmdetails', (req, res) => {
+	res.render('klmdetails');
+});
+
 router.get('/healthkit', async (req, res, next) => {
 	try {
 		const response = await got('http://tool.getroadmap.com/api/travelpolicy/');

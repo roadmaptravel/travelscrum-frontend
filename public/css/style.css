@@ -214,3 +214,12 @@ input[type="color"]:focus,
 .datepicker > div {
 	display: block;
 }
+
+.review-chevron {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -12px;
+  font-size: 24px;
+  color: #989898;
+}
