@@ -12,7 +12,7 @@
 						<div class="card rounded-0 border-0 rounded-top" style="margin-top: -20px; border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important;">
 							<div class="card-header" style="border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important; background: white;">
 								<span class="badge badge-secondary">Partially open</span>
-								<span class="badge badge-success">Approved</span>
+								<span class="badge badge-success">{{{geoInfo.approval}}}</span>
 							</div>
 							<div class="card-body">
 								<h4 class="mb-0">Amsterdam, Netherlands</h4>
@@ -182,11 +182,11 @@
 												<div class="col-6">Last updated<br /><strong>13/06/2020</strong></div>
 											</div>
 											<div class="row mt-3">
-												<div class="col-6">Infected % population<br /><strong style="color: #00e46e;">0.28%</strong></div>
+												<div class="col-6">Infected % population<br /><strong style="color: #00e46e;">{{{pages.country.outbreak.infectedPopulation}}}</strong></div>
 												<div class="col-6">Death % population<br /><strong style="color: #00e46e;">0.03%</strong></div>
 											</div>
 											<div class="row mt-3">
-												<div class="col-6">Infection risk score<br /><strong style="color: #00e46e;">3/100</strong></div>
+												<div class="col-6">Infection risk score<br /><strong style="color: #00e46e;">{{{pages.country.outbreak.infectionRiskScore}}}</strong></div>
 												<div class="col-6">Lockdown<br /><strong>No</strong></div>
 											</div>
 										</div>
@@ -198,20 +198,20 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Arrive at destination</h5>
 											<p class="card-text">
-												<strong>Entry restrictions</strong><br />
-												Most international travelers are not allowed to enter the Netherlands.
+												<strong>{{{pages.country.arriveDestination.entryRestrictions.title}}}</strong><br />
+												{{{pages.country.arriveDestination.entryRestrictions.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Recommended 14-day quarantine</strong><br />
-												All travelers arriving from high-risk areas found on the European Union Aviation Safety Agencies list are strongly advised to quarantine for 14 days upon arrival.
+												<strong>{{{pages.country.arriveDestination.quarantine.title}}}</strong><br />
+												{{{pages.country.arriveDestination.quarantine.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Mandatory health declaration form before departure</strong><br />
-												Travelers are required to fill out a health declaration before boarding if they are arriving from a country on the European Union Aviation Safety Agencies high-risk areas list.
+												<strong>{{{pages.country.arriveDestination.mandatoryHealthDeclaration.title}}}</strong><br />
+												{{{pages.country.arriveDestination.mandatoryHealthDeclaration.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Mandatory essential business letter</strong><br />
-												Travelers are required to show an official business letter that proves their travel is essential.
+												<strong>{{{pages.country.arriveDestination.mandatoryBusinessLetter.title}}}</strong><br />
+												{{{pages.country.arriveDestination.mandatoryBusinessLetter.content}}}
 											</p>
 										</div>
 									</div>
@@ -219,16 +219,16 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Arrive home from destination</h5>
 											<p class="card-text">
-												<strong>Entry restrictions</strong><br />
-												Travelers can’t enter the United States if they have visited selected countries in the past 14 days.
+												<strong>{{{pages.country.arriveHome.entryRestrictions.title}}}</strong><br />
+												{{{pages.country.arriveHome.entryRestrictions.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Mandatory 14-day quarantine</strong><br />
-												All travelers that have been to a selected country within 14 days of their arrival are required to self-quarantine for 14 days at home.
+												<strong>{{{pages.country.arriveHome.quarantine.title}}}</strong><br />
+												{{{pages.country.arriveHome.quarantine.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Mandatory health declaration form</strong><br />
-												Individual states may have their own restrictions and procedures in place. Check with local authorities for travel information before entering each US state.
+												<strong>{{{pages.country.arriveHome.mandatoryBusinessLetter.title}}}</strong><br />
+												{{{pages.country.arriveHome.mandatoryBusinessLetter.content}}}
 											</p>
 										</div>
 									</div>
@@ -237,28 +237,28 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Visa</h5>
 											<p class="card-text">
-												<strong>Visa</strong><br />
-												You don't need a visa. You can travel to Netherlands for a limited stay. Make sure to check other entry requirements and how long you can stay for.
+												<strong>{{{pages.country.visa.visa.title}}}</strong><br />
+												{{{pages.country.visa.visa.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Stay</strong><br />
-												90 days within any 180-day period in the Schengen Area (European Netherlands)
+												<strong>{{{pages.country.visa.stay.title}}}</strong><br />
+												{{{pages.country.visa.stay.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Passport validity</strong><br />
-												6 months.
+												<strong>{{{pages.country.visa.passportValidity.title}}}</strong><br />
+												{{{pages.country.visa.passportValidity.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Passport</strong><br />
-												Your passport must have two blank pages per entry.
+												<strong>{{{pages.country.visa.passport.title}}}</strong><br />
+												{{{pages.country.visa.passport.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Currency</strong><br />
-												Euros.
+												<strong>{{{pages.country.visa.currency.title}}}</strong><br />
+												{{{pages.country.visa.currency.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Vaccination</strong><br />
-												You do not require any vaccinations.
+												<strong>{{{pages.country.visa.vaccination.title}}}</strong><br />
+												{{{pages.country.visa.vaccination.content}}}
 											</p>
 										</div>
 									</div>
@@ -280,12 +280,12 @@
 												Operational with restrictions.
 											</p>
 											<p class="card-text">
-												<strong>Nike preferred transport</strong><br />
-												You should use: private car services or taxi services.
+												<strong>{{{pages.city.transport.corporatePreferredTransport.title}}}</strong><br />
+												{{{pages.city.transport.corporatePreferredTransport.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Nike non-preferred transport</strong><br />
-												You should not use: car retnal, public transport or ride sharing.
+												<strong>{{{pages.city.transport.corporateNonPreferredTransport.title}}}</strong><br />
+												{{{pages.city.transport.corporateNonPreferredTransport.content}}}
 											</p>
 										</div>
 									</div>
@@ -335,8 +335,8 @@
 												Open with restrictions.
 											</p>
 											<p class="card-text">
-												<strong>Nike preferred conduct</strong><br />
-												Please eat the hotel restaurant to ensure maximum safety and hygiene. Try to minimize shopping, attending events and visiting tourist attractions.
+												<strong>{{{pages.city.foodAndEntertainment.corporatePreferredConduct.title}}}</strong><br />
+												{{{pages.city.foodAndEntertainment.corporatePreferredConduct.content}}}
 											</p>
 										</div>
 									</div>
@@ -347,8 +347,8 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Office</h5>
 											<p class="card-text">
-												<strong>Restrictions</strong><br />
-												Open with social distancing.
+												<strong>{{{pages.city.office.restrictions.title}}}</strong><br />
+												{{{pages.city.office.restrictions.content}}}
 											</p>
 										</div>
 									</div>
@@ -366,16 +366,16 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Health</h5>
 											<p class="card-text">
-												<strong>Health kit</strong><br />
-												You need to pick up a health kit from your local office.
+												<strong>{{{pages.wellBeing.health.healthKit.title}}}</strong><br />
+												{{{pages.wellBeing.health.healthKit.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Special insurance</strong><br />
-												All Nike travelers have special travel insurance that covers all health incidents, including COVID-19 related hospital admittance.
+												<strong>{{{pages.wellBeing.health.specialInsurance.title}}}</strong><br />
+												{{{pages.wellBeing.health.specialInsurance.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Quarantine cost</strong><br />
-												Nike covers all quarantine costs in case of mandatory quarantine upon entry, or when quarantined upon contact with an infected individual.
+												<strong>{{{pages.wellBeing.health.quarantineCost.title}}}</strong><br />
+												{{{pages.wellBeing.health.quarantineCost.content}}}
 											</p>
 										</div>
 									</div>
@@ -389,12 +389,12 @@
 										<div class="card-body">
 											<h5 class="card-title font-weight-light">Exercise</h5>
 											<p class="card-text">
-												<strong>Nike gyms</strong><br />
-												You have free access to all gyms that are connected to Nike Training Club.
+												<strong>{{{pages.wellBeing.exercise.corporateGyms.title}}}</strong><br />
+												{{{pages.wellBeing.exercise.corporateGyms.content}}}
 											</p>
 											<p class="card-text">
-												<strong>Daily allowance</strong><br />
-												We believe in healthy travel at Nike; you can spend $20 every day to work out at any gym or sports club.
+												<strong>{{{pages.wellBeing.exercise.dailyAllowance.title}}}</strong><br />
+												{{{pages.wellBeing.exercise.dailyAllowance.content}}}
 											</p>
 										</div>
 									</div>
@@ -413,10 +413,9 @@
 								<div class="col-12 pt-3">
 									<div class="card shadow-sm">
 										<div class="card-body">
-											<h5 class="card-title font-weight-light">Environmental impact score</h5>
+											<h5 class="card-title font-weight-light">{{{pages.environment.impactScore.title}}}</h5>
 											<p class="card-text">
-												Average sustainability score for this route, and 3 nights.<br />
-												<span class="font-weight-bold" style="color: #fe8103;">63/100</span>
+												{{{pages.environment.impactScore.content}}}
 											</p>
 										</div>
 									</div>
