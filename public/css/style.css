@@ -211,6 +211,62 @@ input[type="color"]:focus,
 	  background-color: #333333;
 }
 
+.btn-submit:hover {
+	color: #fff;
+	background-color: #dcdcdc
+}
+
 .datepicker > div {
 	display: block;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.white { background-color: #fff; border: 1px solid #000;}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #3b99fc;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    margin-top: -10px;
+}
+
+
+.checkbox-lg .custom-control-label::before, 
+.checkbox-lg .custom-control-label::after {
+  top: .8rem;
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.checkbox-lg .custom-control-label {
+  padding-top: 13px;
+  padding-left: 16px;
+}
+
+
+.checkbox-xl .custom-control-label::before, 
+.checkbox-xl .custom-control-label::after {
+  top: 1.2rem;
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+.checkbox-xl .custom-control-label {
+  padding-top: 23px;
+  padding-left: 10px;
+}
+
+.custom-control { padding-left: 0; }
+
+.emote.active {
+	fill: #ff0000
 }
