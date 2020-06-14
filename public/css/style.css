@@ -1,16 +1,12 @@
 body { 
-	max-width: 480px; 
-	background: #c9c9c9;
-	margin: 0 auto !important; 
-	float: none !important; 
+	/*max-width: 480px; */
+	background: #f8f8f7;
+	/*margin: 0 auto !important; 
+	float: none !important; */
 }
 
 .roadmap-container { 
 	background: #fff;
-}
-
-* {
-	font-family: HelveticaNeue;
 }
 
 .infoblock h3 {
@@ -38,7 +34,7 @@ body {
 }
 
 .menu .nav {
-	background: #eab425;
+	background: #333333;
 	height: 42px;
 }
 
@@ -63,4 +59,20 @@ body {
 
 .padding-box {
 	padding: 0 25px;
+}
+
+.tab-content {
+  background: #f8f8f7;
+}
+
+.badge {
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #919191;
+  line-height: 20px;
 }

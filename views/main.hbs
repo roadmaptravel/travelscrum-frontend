@@ -1,37 +1,226 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Roadmap Trave/Scrum Hackathon</title>
+	<title>Roadmap Trave/Scrum Hackathon</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel='stylesheet' href='https://www.getroadmap.com/static/assets/fonts/helvetica.css' type='text/css' media='all' />
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-	  
-	  <div class="roadmap-container">
-		  <div class="row">
-			  <div class="col-md-12">
-				  <img class="img-fluid" src="/images/layout/header.jpg" />
-			  </div>
-		  </div>
-	  
-		  {{{body}}}
-		  
-	  </div>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+				<div class="container-fluid px-0">
+					<div class="row">
+						<div class="col-12 px-0">
+							<img class="img-fluid" src="/images/layout/header.jpg">
+						</div>
+					</div>  
+					<div class="row">
+						<div class="col-12 px-0">
+							<div class="card rounded-0 border-0 rounded-top" style="margin-top: -20px; border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important;">
+								<div class="card-header" style="border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important; background: white;">
+									<span class="badge badge-secondary">Partially open</span>
+									<span class="badge badge-success">Approved</span>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a href="#" class="card-link">Card link</a>
+									<a href="#" class="card-link">Another link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="container-fluid px-0">
+						<div class="row">
+							<div class="col-12 px-0 menu">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" id="checklist-tab" data-toggle="tab" href="#checklist" role="tab" aria-controls="checklist" aria-selected="false">Checklist</a>
+									</li>
+									
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Country</a>
+									</li>
+									
+									<li class="nav-item" role="presentation">
+										<a class="nav-link active" id="city-tab" data-toggle="tab" href="#city" role="tab" aria-controls="city" aria-selected="true">City</a>
+									</li>
+									
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" id="traveltips-tab" data-toggle="tab" href="#traveltips" role="tab" aria-controls="traveltips" aria-selected="false">Travel Tips</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="col-12 px-0 tab-content pb-3" id="myTabContent">
+								<div class="tab-pane fade" id="checklist" role="tabpanel" aria-labelledby="checklist-tab">
+
+								</div>
+								<div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
+
+									<div class="col-12 pt-3">
+										<div class="card shadow-sm mt-3">
+											<img src="/images/layout/header.jpg" class="card-img" alt="Corona symptoms">
+										</div>
+										<div class="card shadow-sm mt-3">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Arrive at destination</h5>
+												<p class="card-text">
+													<strong>Entry restrictions</strong><br />
+													Most international travelers are not allowed to enter the Netherlands.
+												</p>
+												<p class="card-text">
+													<strong>Recommended 14-day quarantine</strong><br />
+													All travelers arriving from high-risk areas found on the European Union Aviation Safety Agencies list are strongly advised to quarantine for 14 days upon arrival.
+												</p>
+												<p class="card-text">
+													<strong>Mandatory health declaration form before departure</strong><br />
+													Travelers are required to fill out a health declaration before boarding if they are arriving from a country on the European Union Aviation Safety Agencies high-risk areas list.
+												</p>
+												<p class="card-text">
+													<strong>Mandatory essential business letter</strong><br />
+													Travelers are required to show an official business letter that proves their travel is essential.
+												</p>
+											</div>
+										</div>
+										<div class="card shadow-sm mt-3">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Arrive home from destination</h5>
+												<p class="card-text">
+													<strong>Entry restrictions</strong><br />
+													Travelers can’t enter the United States if they have visited selected countries in the past 14 days.
+												</p>
+												<p class="card-text">
+													<strong>Mandatory 14-day quarantine</strong><br />
+													All travelers that have been to a selected country within 14 days of their arrival are required to self-quarantine for 14 days at home.
+												</p>
+												<p class="card-text">
+													<strong>Mandatory health declaration form</strong><br />
+													Individual states may have their own restrictions and procedures in place. Check with local authorities for travel information before entering each US state.
+												</p>
+											</div>
+										</div>
+										
+										<div class="card shadow-sm mt-3">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Visa</h5>
+												<p class="card-text">
+													<strong>Visa</strong><br />
+													You don't need a visa. You can travel to Netherlands for a limited stay. Make sure to check other entry requirements and how long you can stay for.
+												</p>
+												<p class="card-text">
+													<strong>Stay</strong><br />
+													90 days within any 180-day period in the Schengen Area (European Netherlands)
+												</p>
+												<p class="card-text">
+													<strong>Passport validity</strong><br />
+													6 months.
+												</p>
+												<p class="card-text">
+													<strong>Passport</strong><br />
+													Your passport must have two blank pages per entry.
+												</p>
+												<p class="card-text">
+													<strong>Currency</strong><br />
+													Euros.
+												</p>
+												<p class="card-text">
+													<strong>Vaccination</strong><br />
+													You do not require any vaccinations.
+												</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="tab-pane fade show active" id="city" role="tabpanel" aria-labelledby="city-tab">
+									<div class="col-12 pt-3">
+										<div class="card shadow-sm">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Transport</h5>
+												<p class="card-text">
+													<strong>Public transport</strong><br />
+													Operational with restrictions.
+												</p>
+												<p class="card-text">
+													<strong>Nike preferred transport</strong><br />
+													You should use: private car services or taxi services.
+												</p>
+												<p class="card-text">
+													<strong>Nike non-preferred transport</strong><br />
+													You should not use: car retnal, public transport or ride sharing.
+												</p>
+											</div>
+										</div>
+										<div class="card shadow-sm mt-3">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Food & Entertainment</h5>
+												<p class="card-text">
+													<strong>Restaurant</strong><br />
+													Open with restrictions.
+												</p>
+												<p class="card-text">
+													<strong>Shopping</strong><br />
+													Open.
+												</p>
+												<p class="card-text">
+													<strong>Events</strong><br />
+													Outdoor and indoor events with up to 30 people with social distancing allowed.
+												</p>
+												<p class="card-text">
+													<strong>Tourist attractions</strong><br />
+													Open with restrictions.
+												</p>
+											</div>
+										</div>
+										<div class="card shadow-sm mt-3">
+											<img src="/images/layout/header.jpg" class="card-img" alt="Corona symptoms">
+										</div>
+										<div class="card shadow-sm mt-3">
+											<div class="card-body">
+												<h5 class="card-title font-weight-light">Office</h5>
+												<p class="card-text">
+													<strong>Restrictions</strong><br />
+													Open with social distancing.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="traveltips" role="tabpanel" aria-labelledby="traveltips-tab">
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 </html>
