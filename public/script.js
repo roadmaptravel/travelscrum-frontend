@@ -15,4 +15,5 @@ $(document).ready (function () {
             $('#entryButton').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
         }
     });
+    
 });
