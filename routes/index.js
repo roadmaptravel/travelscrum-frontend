@@ -1,10 +1,10 @@
 const express = require('express');
-const got = require('g');
+const got = require('got');
 const router = express.Router();
 
 router.get('/advice', async (req, res, next) => {
 	try {
-		const response = await got('https://travelscrum.herokuapp.com/api/', req);
+		const response = await got('https://travelscrum.herokuapp.com/api/', req.query);
 		const obj = JSON.parse(response.body);
 		res.render('advice', obj);
 	} catch (err) {
@@ -26,8 +26,17 @@ router.get('/entry', (req, res) => {
 	res.render('entry', req.params);
 });
 
-router.get('/healthkit', (req, res) => {
-	res.render('healthkit', req.params);
+router.get('/healthkit', async (req, res, next) => {
+	try {
+		const response = await got('http://tool.getroadmap.com/api/travelpolicy/');
+		const obj = JSON.parse(response.body);
+		res.render('healthkit', { "policy": obj.result });
+		
+	} catch (err) {
+		next(err);
+	}
+		
+	
 });
 
 
