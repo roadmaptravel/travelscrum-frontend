@@ -124,3 +124,8 @@ ion-icon {
   display: inline-block;
   margin-right: 5px;
 }
+
+.chevron {
+  color: #989898;
+  font-size: 24px;
+}
