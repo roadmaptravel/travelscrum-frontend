@@ -26,6 +26,10 @@ router.get('/entry', (req, res) => {
 	res.render('entry', req.params);
 });
 
+router.get('/healthkit', (req, res) => {
+	res.render('healthkit', req.params);
+});
+
 
 router.get('/', (req, res) => {
 	res.render('index');
