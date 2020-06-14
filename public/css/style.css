@@ -223,3 +223,11 @@ input[type="color"]:focus,
   font-size: 24px;
   color: #989898;
 }
+
+.collapse-chevron {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #c4c4c4;
+}
