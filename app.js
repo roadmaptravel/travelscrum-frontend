@@ -1,7 +1,5 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
-var hbsHelpers = require('handlebars-helpers');
-
 
 const path = require('path');
 const PORT = process.env.PORT || 5000;
@@ -15,6 +13,7 @@ app.use(express.static('public'));
 app.engine('hbs', handlebars({
 	extname: 'hbs',
 	layoutsDir: __dirname + '/views/',
+	partialsDir: __dirname + '/views/partials/',
 	helpers: require('./helpers/handlebars-helpers')
 }));
 app.set('view engine', 'hbs');

@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/roadmaptravel/travelscrum-frontend#readme",
   "devDependencies": {
-    "handlebars-helpers": "^0.10.0",
     "helper-moment": "^0.2.0"
   }
 }

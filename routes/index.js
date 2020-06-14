@@ -16,8 +16,17 @@ router.get('/entry', (req, res) => {
 	res.render('entry', req.params);
 });
 
-router.get('/healthkit', (req, res) => {
-	res.render('healthkit', req.params);
+router.get('/healthkit', async (req, res, next) => {
+	try {
+		const response = await got('http://tool.getroadmap.com/api/travelpolicy/');
+		const obj = JSON.parse(response.body);
+		res.render('healthkit', { "policy": obj.result });
+		
+	} catch (err) {
+		next(err);
+	}
+		
+	
 });
 
 
