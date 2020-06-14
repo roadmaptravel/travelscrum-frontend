@@ -1,5 +1,5 @@
 const express = require('express');
-const got = require('g');
+const got = require('got');
 const router = express.Router();
 
 router.get('/advice', async (req, res, next) => {
