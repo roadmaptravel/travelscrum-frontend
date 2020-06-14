@@ -14,10 +14,6 @@ body {
     display: none; // Safari and Chrome
 }
 
-.roadmap-container { 
-	background: #fff;
-}
-
 .infoblock h3 {
   font-size: 24px;
   font-weight: bold;
@@ -64,7 +60,7 @@ body {
 	box-shadow: inset 0 -5px 0 #fff;
 }
 
-.menu .nav-link { padding: 0 33px;}
+.menu .nav-link { padding: 0 15px;}
 
 .padding-box {
 	padding: 0 25px;
@@ -128,4 +124,8 @@ ion-icon {
 .chevron {
   color: #989898;
   font-size: 24px;
+}
+
+.nav-item {
+  text-transform: uppercase;
 }
