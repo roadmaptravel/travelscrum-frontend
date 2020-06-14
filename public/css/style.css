@@ -181,3 +181,32 @@ input[type="color"]:focus,
   padding-left: 20px; 
   padding-right: 20px;
 }
+
+.btn-submit[disabled] {
+	width: 75%;
+	height: 41px;
+	height: 41px;
+	font-size: 14px;
+	color: #c2c2c2;
+	padding: 0;
+	line-height: 41px;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.41);
+	background-color: #dcdcdc;
+}
+
+
+.btn-submit {
+	width: 75%;
+	height: 41px;
+	font-size: 14px;
+	color: #c2c2c2;
+	padding: 0;
+	line-height: 41px;
+	border-radius: 6px !important;
+	-moz-border-radius: 6px;
+	-webkit-appearance: none;
+	color: #fff;
+	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.41);
+	  background-color: #333333;
+}
