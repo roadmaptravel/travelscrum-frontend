@@ -267,6 +267,20 @@ input[type='range']::-webkit-slider-thumb {
 
 .custom-control { padding-left: 0; }
 
-.emote.active {
-	fill: #ff0000
+
+.review-chevron {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -12px;
+  font-size: 24px;
+  color: #989898;
+}
+
+.collapse-chevron {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #c4c4c4;
 }

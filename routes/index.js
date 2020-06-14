@@ -4,7 +4,10 @@ const router = express.Router();
 
 router.get('/advice', async (req, res, next) => {
 	try {
-		const response = await got('https://travelscrum.herokuapp.com/api/', req.query);
+		const response = await got('https://travelscrum.herokuapp.com/api', {
+		    searchParams: req.query
+		});
+		
 		const obj = JSON.parse(response.body);
 		res.render('advice', obj);
 	} catch (err) {
@@ -20,6 +23,10 @@ router.get('/business-letter', (req, res) => {
 	res.render('business-letter', req.params);
 });
 
+router.get('/klmdetails', (req, res) => {
+	res.render('klmdetails');
+});
+
 router.get('/healthkit', async (req, res, next) => {
 	try {
 		const response = await got('http://tool.getroadmap.com/api/travelpolicy/');
@@ -29,8 +36,6 @@ router.get('/healthkit', async (req, res, next) => {
 	} catch (err) {
 		next(err);
 	}
-		
-	
 });
 
 
