@@ -5,6 +5,15 @@ body {
 	float: none !important; */
 }
 
+* {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+
+*::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+
 .roadmap-container { 
 	background: #fff;
 }
@@ -76,3 +85,29 @@ body {
   color: #919191;
   line-height: 20px;
 }
+
+.tabbable .nav-tabs {
+   overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+}
+
+.tabbable .nav-tabs .nav-link {
+  white-space: nowrap;
+}
+
+.icon-star {
+  color: #25e6d2;
+}
+
+.icon-leaf {
+  color: #00e46e;
+}
+
+.icon-heart {
+  color: #ff2e99;
+}
+
+ion-icon {
+    margin-bottom: -3px;
+  }
