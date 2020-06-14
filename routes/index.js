@@ -1,9 +1,19 @@
 const express = require('express');
-
+const got = require('got');
 const router = express.Router();
 
-router.get('/advice', (req, res) => {
-	res.render('advice', req.params);
+router.get('/advice', async (req, res, next) => {
+	try {
+		const response = await got('https://travelscrum.herokuapp.com/api/?cityName=' + req.destination);
+		const obj = JSON.parse(response.body);
+		res.render('advice', obj);
+	} catch (err) {
+		next(err);
+	}
+});
+
+router.get('/test', (req, res) => {
+	res.render('advice');
 });
 
 router.get('/entry', (req, res) => {
@@ -12,7 +22,7 @@ router.get('/entry', (req, res) => {
 
 
 router.get('/', (req, res) => {
-  res.render('index');
+	res.render('index');
 });
 
 module.exports = router;
