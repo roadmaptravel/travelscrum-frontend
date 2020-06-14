@@ -23,11 +23,16 @@
 		<div class="row justify-content-center">
 			<div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
 				<div class="container-fluid px-0">
+
+					<!-- Start header image -->
 					<div class="row">
 						<div class="col-12 px-0">
 							<img class="img-fluid" src="/images/layout/header.jpg">
 						</div>
 					</div>  
+					<!-- End header image -->
+
+					<!-- Start top card -->
 					<div class="row">
 						<div class="col-12 px-0">
 							<div class="card rounded-0 border-0 rounded-top" style="margin-top: -20px; border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important;">
@@ -64,15 +69,16 @@
 							</div>
 						</div>
 					</div>
+					<!-- End top card -->
 					
-
+					<!-- Start menu -->
 					<div class="container-fluid px-0">
 						<div class="row">
 							<div class="col-12 px-0 menu">
 								<div class="tabbable">
 									<ul class="nav nav-tabs" id="myTab" role="tablist">
 										<li class="nav-item" role="presentation">
-											<a class="nav-link" id="checklist-tab" data-toggle="tab" href="#checklist" role="tab" aria-controls="checklist" aria-selected="false">Checklist</a>
+											<a class="nav-link active" id="checklist-tab" data-toggle="tab" href="#checklist" role="tab" aria-controls="checklist" aria-selected="true">Checklist</a>
 										</li>
 										
 										<li class="nav-item" role="presentation">
@@ -80,7 +86,7 @@
 										</li>
 										
 										<li class="nav-item" role="presentation">
-											<a class="nav-link active" id="city-tab" data-toggle="tab" href="#city" role="tab" aria-controls="city" aria-selected="true">City</a>
+											<a class="nav-link" id="city-tab" data-toggle="tab" href="#city" role="tab" aria-controls="city" aria-selected="false">City</a>
 										</li>
 										
 										<li class="nav-item" role="presentation">
@@ -95,9 +101,74 @@
 							</div>
 							
 							<div class="col-12 px-0 tab-content pb-3" id="myTabContent">
-								<div class="tab-pane fade" id="checklist" role="tabpanel" aria-labelledby="checklist-tab">
 
+								<!-- Start checklist -->
+								<div class="tab-pane fade show active" id="checklist" role="tabpanel" aria-labelledby="checklist-tab">
+									<div class="col-12 pt-3">
+										<div class="card shadow-sm">
+											<div class="card-body">
+												<img src="/images/checklist_amsterdam.jpg" class="card-img mb-3" alt="Corona symptoms">
+
+												<h5 class="card-title font-weight-light">Well-being</h5>
+												<p class="card-text">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+														<label class="form-check-label ml-2" for="inlineCheckbox2"><strong>Pickup Health Kit</strong></label>
+													</div>
+													<span class="badge float-right border font-weight-normal" style="padding: 5px 10px; text-transform: none; font-size: 13px;"><span class="dot"></span>open</span>
+												</p>
+
+												<hr class="mt-2 mb-3"/>
+
+												<h5 class="card-title font-weight-light">Documentation</h5>
+												<p class="card-text">
+													<div class="form-check form-check-inline">
+														<ion-icon name="checkmark-outline" class="icon-checkmark"></ion-icon>
+														<label class="form-check-label ml-2 text-muted" for="inlineCheckbox2"><s>Apply for a VISA</s></label>
+													</div>
+												</p>
+
+												<hr class="mt-2 mb-3"/>
+
+												<p class="card-text">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+														<label class="form-check-label ml-2" for="inlineCheckbox3"><strong>Essential Business Letter</strong></label>
+													</div>
+													<span class="badge float-right text-white font-weight-normal" style="padding: 5px 10px; text-transform: none; font-size: 13px; background-color: #ff8103;">Due 12/7/2020</span>
+												</p>
+
+												<hr class="mt-2 mb-3"/>
+
+												<p class="card-text">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" checked>
+														<label class="form-check-label ml-2" for="inlineCheckbox4"><strong>Read Travel Policy</strong></label>
+													</div>
+													<span class="badge float-right border font-weight-normal" style="padding: 5px 10px; text-transform: none; font-size: 13px;"><span class="dot"></span>in progress</span>
+												</p>
+
+												<hr class="mt-2 mb-3"/>
+
+												<div class="row">
+													<div class="col-6">
+														<button class="btn btn-primary mr-2 border-0" style="border-radius: 50%; width: 40px; height: 40px; background-color: black;" type="submit">
+															<ion-icon name="add" size="large" style="color: white; margin-left: -8px; margin-top: -3px;"></ion-icon>
+														</button>
+														<strong>Add more tasks</strong>
+													</div>
+													<div class="col-6">
+														<button class="btn btn-primary border-0 mr-2" style="border-radius: 50%; width: 40px; height: 40px; background-color: black;" type="submit">
+															<ion-icon name="share" size="large" style="color: white; margin-left: -8px; margin-top: -4px;"></ion-icon>
+														</button>
+														<strong>Share checklist</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
+								<!-- End checklist -->
 
 								<!-- Start country -->
 								<div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
@@ -197,7 +268,7 @@
 								<!-- End country -->
 
 								<!-- Start city -->
-								<div class="tab-pane fade show active" id="city" role="tabpanel" aria-labelledby="city-tab">
+								<div class="tab-pane fade" id="city" role="tabpanel" aria-labelledby="city-tab">
 									<div class="col-12 pt-3">
 										<div class="card shadow-sm">
 											<div class="card-body">
@@ -372,11 +443,7 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
+					<!-- End menu -->
 
 				</div>
 			</div>
