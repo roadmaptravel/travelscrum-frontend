@@ -1,7 +1,5 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
-var hbsHelpers = require('handlebars-helpers');
-
 
 const path = require('path');
 const PORT = process.env.PORT || 5000;
